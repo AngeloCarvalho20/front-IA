@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ImageUploader from './ImageUploader';
+import ImageUploader from './ImageUploader.js';
 import ResponseDisplay from './ResponseDisplay';
 import './styles.css';
 
@@ -12,7 +12,7 @@ const LandingPage = () => {
 
   return (
     <div>
-      <h1>Landing Page</h1>
+      <h1>Advinhamos seu tubarão</h1>
       <ImageUploader onFormSubmit={handleFormSubmit} />
       {response && <ResponseDisplay responseData={response} />}
     </div>
